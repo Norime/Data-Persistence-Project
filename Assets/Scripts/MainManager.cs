@@ -64,6 +64,7 @@ public class MainManager : MonoBehaviour
                 BestScoreText.text = $"Best Score : {GameManager.Instance.playerName} {m_Points}";
                 GameManager.Instance.BestScore = m_Points;
                 GameManager.Instance.BestScorePlayerName = GameManager.Instance.playerName;
+                GameManager.Instance.SaveBestScore();
             }
             
             BtnRestart.SetActive(true);
